@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    mobileMenuBtn.addEventListener('click', function(e) {
+    mobileMenuBtn.addEventListener('click', function (e) {
         e.stopPropagation();
         toggleMenu();
     });
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close mobile menu when clicking overlay background
-    mobileMenuOverlay.addEventListener('click', function(e) {
+    mobileMenuOverlay.addEventListener('click', function (e) {
         if (e.target === mobileMenuOverlay) {
             toggleMenu();
         }
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ticking = false;
     }
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (!ticking) {
             window.requestAnimationFrame(updateNavbar);
             ticking = true;
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href === '#') return;
             e.preventDefault();
@@ -81,14 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Escape key to close mobile menu
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
             toggleMenu();
         }
     });
 
     // Trap focus in mobile menu when open
-    mobileMenuOverlay.addEventListener('keydown', function(e) {
+    mobileMenuOverlay.addEventListener('keydown', function (e) {
         if (e.key === 'Tab') {
             const focusableElements = mobileMenuOverlay.querySelectorAll('a, button');
             const firstFocusable = focusableElements[0];
@@ -208,7 +208,7 @@ if (servicesCta) {
 // Append to main.js
 // ══════════════════════════════════════
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // Portfolio header
     const portfolioHeader = document.querySelector('.portfolio-header');
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterTabs = document.querySelectorAll('.filter-tab');
 
     filterTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
+        tab.addEventListener('click', function () {
             // Update active state
             filterTabs.forEach(t => t.classList.remove('active'));
             this.classList.add('active');
@@ -322,7 +322,7 @@ retainerCards.forEach(card => {
 // TESTIMONIALS SECTION — Seamless Infinite Carousel
 // ══════════════════════════════════════
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     const carouselTrack = document.getElementById('carouselTrack');
 
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ABOUT SECTION — Scroll Reveal & Animated Counters
 // ═══════════════════════════════════════════════════════
 
-(function() {
+(function () {
     'use strict';
 
     // ─── Scroll Reveal Observer ──────────────────────────
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // FAQ SECTION — Scroll Reveal & Accordion Toggle
 // ═══════════════════════════════════════════════════════
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
     // ─── Scroll Reveal for FAQ Section ───────────────────
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
 
-        question.addEventListener('click', function() {
+        question.addEventListener('click', function () {
             const isActive = item.classList.contains('active');
 
             // Close all other items
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Keyboard accessibility
-        question.addEventListener('keydown', function(e) {
+        question.addEventListener('keydown', function (e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
                 question.click();
@@ -522,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Append to main.js
 // ═══════════════════════════════════════════════════════
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
     // ─── Scroll Reveal Observer ─────────────────────────
@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const formSuccess = document.getElementById('formSuccess');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             const submitBtn = contactForm.querySelector('.form-submit');
@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Package: Not sure yet';
 
             const message = encodeURIComponent(
-                `Hi SalonFlow! I'm ${nameInput.value.trim()} from ${businessInput.value.trim() || 'a new business'}.\n\n` +
+                `Hi Nexora! I'm ${nameInput.value.trim()} from ${businessInput.value.trim() || 'a new business'}.\n\n` +
                 `Business Type: ${businessType.charAt(0).toUpperCase() + businessType.slice(1)}\n` +
                 `${packageText}\n` +
                 `${messageInput.value.trim() ? `\nDetails: ${messageInput.value.trim()}` : ''}\n\n` +
@@ -646,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ─── Contact Card Click-to-Action ────────────────────
     document.querySelectorAll('.contact-card').forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const link = this.querySelector('a');
             if (link) {
                 link.click();
@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ─── Real-time Validation Clear ───────────────────────
     document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(input => {
-        input.addEventListener('input', function() {
+        input.addEventListener('input', function () {
             this.closest('.form-group')?.classList.remove('has-error');
         });
     });
@@ -665,11 +665,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // ── BACK TO TOP ──────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const backToTopBtn = document.getElementById('backToTop');
 
     if (backToTopBtn) {
-        backToTopBtn.addEventListener('click', function(e) {
+        backToTopBtn.addEventListener('click', function (e) {
             e.preventDefault();
 
             window.scrollTo({
@@ -686,7 +686,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ABOUT SECTION — Scroll Reveal & Animated Counters
 // ═══════════════════════════════════════════════════════
 
-(function() {
+(function () {
     'use strict';
 
     // ─── Scroll Reveal Observer ──────────────────────────
