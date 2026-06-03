@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found — SalonFlow Studio. Premium digital experiences for elite salons and barbershops.">
+    <title>404 — SalonFlow Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --ink: #0B0F19;
+            --ink-light: #141B2D;
+            --emerald: #059669;
+            --emerald-glow: rgba(5, 150, 105, 0.12);
+            --cream: #FAFBFC;
+            --warm: #F4F5F7;
+            --stone: #8A9199;
+            --mist: #E2E5E9;
+            --pure: #FFFFFF;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--cream);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── NAVBAR ── */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            position: relative;
+        }
+
+        .logo-mark::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            background: var(--emerald);
+            opacity: 0.1;
+        }
+
+        .logo-mark svg { position: relative; z-index: 1; }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            gap: 2px;
+        }
+
+        .logo-name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--ink);
+            letter-spacing: -0.03em;
+        }
+
+        .logo-name span { color: var(--emerald); }
+
+        .logo-tag {
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: 10px;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--stone);
+        }
+
+        .nav-cta {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--stone);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--mist);
+            transition: all 200ms ease;
+            background: var(--pure);
+        }
+
+        .nav-cta:hover {
+            color: var(--emerald);
+            border-color: var(--emerald);
+            box-shadow: 0 2px 12px var(--emerald-glow);
+        }
+
+        /* ── MAIN ── */
+        .error-main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .error-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* ── ILLUSTRATION ── */
+        .error-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .illustration-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 520px;
+        }
+
+        .illustration-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+        }
+
+        /* Subtle ambient glow behind illustration */
+        .illustration-wrap::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 90%;
+            background: radial-gradient(circle, var(--emerald-glow), transparent 70%);
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: -1;
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.7; }
+        }
+
+        /* ── CONTENT ── */
+        .error-content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            max-width: 440px;
+        }
+
+        .eyebrow {
+            font-family: var(--font-body);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--emerald);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eyebrow::before {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--emerald);
+        }
+
+        .error-headline {
+            font-family: var(--font-display);
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            color: var(--ink);
+        }
+
+        .error-body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--stone);
+            line-height: 1.8;
+        }
+
+        /* ── CTAs ── */
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: var(--emerald);
+            color: var(--pure);
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(5, 150, 105, 0.2);
+            letter-spacing: -0.01em;
+        }
+
+        .cta-primary:hover {
+            background: #047857;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(5, 150, 105, 0.3);
+        }
+
+        .cta-primary svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 200ms ease;
+        }
+
+        .cta-primary:hover svg { transform: translateX(2px); }
+
+        .cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 28px;
+            background: transparent;
+            color: var(--ink);
+            font-family: var(--font-body);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 1.5px solid var(--mist);
+            transition: all 200ms ease;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--emerald);
+            color: var(--emerald);
+            background: var(--emerald-glow);
+        }
+
+        /* ── FOOTER ── */
+        .error-footer {
+            padding: 32px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--mist);
+        }
+
+        .footer-left {
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: var(--stone);
+        }
+
+        .footer-right { display: flex; gap: 32px; }
+
+        .footer-link {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--stone);
+            text-decoration: none;
+            transition: color 150ms ease;
+            position: relative;
+        }
+
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: var(--emerald);
+            transition: width 200ms ease;
+        }
+
+        .footer-link:hover { color: var(--emerald); }
+        .footer-link:hover::after { width: 100%; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1100px) {
+            .navbar, .error-main, .error-footer {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .error-container { gap: 60px; }
+            .error-headline { font-size: 36px; }
+        }
+
+        @media (max-width: 768px) {
+            .navbar, .error-main, .error-footer {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .error-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 48px;
+                margin-top: 50px;
+            }
+            .error-visual { order: -1; }
+            .illustration-wrap {
+                max-width: 320px;
+                margin: 0 auto;
+            }
+            .error-headline { font-size: 32px; }
+            .error-content {
+                align-items: center;
+                margin: 0 auto;
+            }
+            .eyebrow { justify-content: center; }
+            .cta-group { width: 100%; }
+            .cta-primary, .cta-secondary { width: 100%; }
+            .error-footer {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+            .footer-right { gap: 24px; }
+        }
+
+        @media (max-width: 480px) {
+            .navbar { height: 64px; }
+            .error-headline { font-size: 28px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .illustration-wrap::before { animation: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="/salonflow.html" class="logo" aria-label="SalonFlow Studio">
+            <div class="logo-mark">
+                <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+                    <path d="M9 37C13 30 19 24 22 22 25 20 33 15 35 8" stroke="#059669" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                    <path d="M9 29C14 24 19 21 22 19 25 17 32 12 35 6" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none" opacity=".4"/>
+                    <circle cx="9" cy="37" r="3.5" fill="#059669"/>
+                    <circle cx="35" cy="8" r="2.2" fill="#059669" opacity=".5"/>
+                </svg>
+            </div>
+            <div class="logo-text">
+                <span class="logo-name">Salon<span>Flow</span></span>
+                <span class="logo-tag">Studio · Kenya</span>
+            </div>
+        </a>
+        <a href="/salonflow.html" class="nav-cta">Return Home</a>
+    </nav>
+
+    <!-- Main -->
+    <main class="error-main">
+        <div class="error-container">
+
+            <!-- External Illustration -->
+            <div class="error-visual">
+                <div class="illustration-wrap">
+                    <img src="/assets/404.png" alt="404 — Page not found illustration" loading="eager" width="520" height="auto">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="error-content">
+                <div class="eyebrow">Lost in the Chair</div>
+
+                <h1 class="error-headline">This page took an unscheduled day off.</h1>
+
+                <p class="error-body">
+                    Looks like this page stepped out for a trim and never came back. It may have moved, been renamed, or just needed a break. Let's get you back on track
+                </p>
+
+                <div class="cta-group">
+                    <a href="https://wa.me/254713324672?text=Hi%20SalonFlow%20team%2C%20I%20was%20exploring%20your%20site%20and%20landed%20here.%20I%27d%20love%20to%20learn%20more%20about%20your%20premium%20website%20packages%20for%20my%20salon." class="cta-primary" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat With Us on WhatsApp
+                    </a>
+
+                    <a href="/salonflow.html" class="cta-secondary">
+                        Back to Homepage
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="error-footer">
+        <div class="footer-left">© 2025 SalonFlow Studio. All rights reserved.</div>
+        <div class="footer-right">
+            <a href="/salonflow.html#services" class="footer-link">Services</a>
+            <a href="/salonflow.html#pricing" class="footer-link">Pricing</a>
+            <a href="https://wa.me/254713324672?text=Hi%20SalonFlow%2C%20I%27d%20like%20to%20schedule%20a%20consultation%20for%20my%20salon%20website." class="footer-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>

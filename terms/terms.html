@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — SalonFlow Studio</title>
+    <meta name="description" content="SalonFlow Studio Terms of Service. Read our service agreement, payment terms, and project policies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-primary: #0F172A;
+            --color-accent: #059669;
+            --color-accent-light: rgba(5, 150, 105, 0.08);
+            --color-accent-hover: rgba(5, 150, 105, 0.12);
+            --color-bg: #F8FAFC;
+            --color-surface: #FFFFFF;
+            --color-text: #334155;
+            --color-text-secondary: #64748B;
+            --color-muted: #94A3B8;
+            --color-border: #E2E8F0;
+            --color-border-light: #F1F5F9;
+            --font-heading: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --nav-height: 64px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--nav-height) + 80px);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── NAV ── */
+        .site-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--color-border-light);
+            padding: 0 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--nav-height);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            transition: opacity 200ms ease;
+        }
+
+        .nav-logo:hover {
+            opacity: 0.8;
+        }
+
+        .nav-logo svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .nav-logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            gap: 2px;
+        }
+
+        .nav-logo-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 15px;
+            color: #0F172A;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-logo-accent {
+            color: #059669;
+        }
+
+        .nav-logo-tag {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 8px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: #94A3B8;
+        }
+
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 200ms ease;
+            font-family: 'Inter', sans-serif;
+            background: transparent;
+        }
+
+        .nav-back:hover {
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+        }
+
+        .nav-back svg {
+            transition: transform 200ms ease;
+        }
+
+        .nav-back:hover svg {
+            transform: translateX(-3px);
+        }
+
+        /* ── MAIN LAYOUT ── */
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: var(--nav-height);
+            min-height: 100vh;
+        }
+
+        /* ── HERO ── */
+        .page-hero {
+            text-align: center;
+            padding: 64px 24px 48px;
+            border-bottom: 1px solid var(--color-border-light);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-family: var(--font-body);
+            border: 1px solid rgba(5, 150, 105, 0.15);
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: var(--color-primary);
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .hero-meta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: var(--color-muted);
+            font-weight: 500;
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* ── ANCHOR BAR ── */
+        .anchor-bar {
+            position: sticky;
+            top: var(--nav-height);
+            background: rgba(248, 250, 252, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-border-light);
+            z-index: 100;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .anchor-bar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .anchor-list {
+            display: flex;
+            gap: 4px;
+            padding: 12px 24px;
+            list-style: none;
+            max-width: 1100px;
+            margin: 0 auto;
+            min-width: max-content;
+        }
+
+        .anchor-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: all 200ms ease;
+            white-space: nowrap;
+        }
+
+        .anchor-link:hover {
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+        }
+
+        .anchor-link.active {
+            background: var(--color-accent);
+            color: #fff;
+        }
+
+        .anchor-number {
+            font-size: 10px;
+            font-weight: 700;
+            opacity: 0.7;
+        }
+
+        /* ── CONTENT ── */
+        .content-area {
+            padding: 48px 24px 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ── SECTIONS ── */
+        .policy-section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--color-border-light);
+            scroll-margin-top: calc(var(--nav-height) + 80px);
+        }
+
+        .policy-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .section-number {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--color-accent);
+            line-height: 1;
+            opacity: 0.3;
+            min-width: 48px;
+            text-align: right;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        .section-body {
+            padding-left: 64px;
+        }
+
+        .section-body p {
+            font-size: 15px;
+            color: var(--color-text);
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .section-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .section-list li {
+            font-size: 15px;
+            color: var(--color-text);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.7;
+            font-weight: 400;
+            padding-left: 4px;
+        }
+
+        .section-list li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            min-width: 6px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            margin-top: 9px;
+            opacity: 0.6;
+        }
+
+        /* ── DEFINITION CARD ── */
+        .definition-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            position: relative;
+        }
+
+        .definition-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 24px;
+            bottom: 24px;
+            width: 3px;
+            background: var(--color-accent);
+            border-radius: 0 2px 2px 0;
+        }
+
+        .definition-card strong {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* ── HIGHLIGHT BOX ── */
+        .highlight-box {
+            background: linear-gradient(135deg, var(--color-accent-light), rgba(5, 150, 105, 0.04));
+            border-left: 3px solid var(--color-accent);
+            border-radius: 0 12px 12px 0;
+            padding: 20px 24px;
+            margin: 24px 0;
+            font-size: 15px;
+            color: var(--color-primary);
+            font-weight: 500;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '⚖️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 18px;
+            background: var(--color-surface);
+            padding: 0 4px;
+        }
+
+        /* ── TABLE ── */
+        .terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+
+        .terms-table th {
+            text-align: left;
+            padding: 12px 16px;
+            background: var(--color-primary);
+            color: #fff;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .terms-table th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .terms-table th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .terms-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--color-border-light);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .terms-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .terms-table tr:nth-child(even) {
+            background: var(--color-bg);
+        }
+
+        /* ── CONTACT CTA ── */
+        .contact-cta {
+            background: linear-gradient(135deg, #052E1C, #0F4C3A);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(5, 150, 105, 0.15);
+            pointer-events: none;
+        }
+
+        .contact-cta::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 20%;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: rgba(5, 150, 105, 0.1);
+            pointer-events: none;
+        }
+
+        .contact-cta h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-cta p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #fff;
+            color: #052E1C;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all 250ms ease;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-cta a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-cta a svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ── FOOTER ── */
+        .site-footer {
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border-light);
+        }
+
+        .footer-main {
+            padding: 48px 64px 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+        }
+
+        .footer-brand-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .footer-logo svg {
+            width: 36px;
+            height: 36px;
+        }
+
+        .footer-logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            gap: 2px;
+        }
+
+        .footer-logo-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            color: var(--color-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .footer-logo-accent {
+            color: var(--color-accent);
+        }
+
+        .footer-logo-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 8px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--color-muted);
+        }
+
+        .footer-tagline {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            max-width: 260px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 8px;
+        }
+
+        .footer-social {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: var(--color-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-secondary);
+            transition: all 200ms ease;
+        }
+
+        .footer-social:hover {
+            background: var(--color-accent);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .footer-social svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .footer-column h4 {
+            font-family: var(--font-heading);
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .footer-links-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links-list a {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color 200ms ease, padding-left 200ms ease;
+            display: inline-block;
+        }
+
+        .footer-links-list a:hover {
+            color: var(--color-accent);
+            padding-left: 4px;
+        }
+
+        .footer-copyright {
+            border-top: 1px solid var(--color-border-light);
+            padding: 20px 64px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-copyright p {
+            font-size: 12px;
+            color: var(--color-muted);
+            margin: 0;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .content-area {
+                padding: 32px 24px 60px;
+            }
+
+            .section-body {
+                padding-left: 0;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .section-number {
+                text-align: left;
+                font-size: 24px;
+            }
+
+            .footer-main,
+            .footer-copyright {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .page-hero {
+                padding: 40px 20px 32px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .contact-cta {
+                padding: 28px 20px;
+            }
+
+            .contact-cta h3 {
+                font-size: 1.2rem;
+            }
+
+            .terms-table {
+                font-size: 13px;
+            }
+
+            .terms-table th,
+            .terms-table td {
+                padding: 10px 12px;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .anchor-link,
+            .contact-cta a,
+            .footer-social {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="site-nav">
+        <a href="/salonflow.html" class="nav-logo">
+            <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 37C13 30 19 24 22 22 25 20 33 15 35 8" stroke="#059669" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <path d="M9 29C14 24 19 21 22 19 25 17 32 12 35 6" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none" opacity=".4"/>
+                <path d="M11 41C16 35 20 30 22 27 24 24 30 20 35 14" stroke="#059669" stroke-width="1" stroke-linecap="round" fill="none" opacity=".2"/>
+                <circle cx="9" cy="37" r="3.5" fill="#059669"/>
+                <circle cx="35" cy="8" r="2.2" fill="#059669" opacity=".5"/>
+                <circle cx="9" cy="29" r="2" fill="#059669" opacity=".3"/>
+            </svg>
+            <div class="nav-logo-text">
+                <span class="nav-logo-name">Salon<span class="nav-logo-accent">Flow</span></span>
+                <span class="nav-logo-tag">Studio · Kenya</span>
+            </div>
+        </a>
+
+        <a href="/salonflow.html" class="nav-back">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+            Back to Home
+        </a>
+    </nav>
+
+    <!-- MAIN WRAPPER -->
+    <div class="page-wrapper">
+
+        <!-- HERO -->
+        <header class="page-hero">
+            <div class="hero-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Legal Document
+            </div>
+            <h1 class="hero-title">Terms of Service</h1>
+            <div class="hero-meta">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    Last updated May 2026
+                </span>
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Kisii, Kenya
+                </span>
+            </div>
+        </header>
+
+        <!-- ANCHOR BAR -->
+        <div class="anchor-bar">
+            <ul class="anchor-list" id="anchorList">
+                <li><a href="#acceptance" class="anchor-link active" data-section="acceptance"><span class="anchor-number">01</span> Acceptance</a></li>
+                <li><a href="#services" class="anchor-link" data-section="services"><span class="anchor-number">02</span> Services</a></li>
+                <li><a href="#agreement" class="anchor-link" data-section="agreement"><span class="anchor-number">03</span> Agreement</a></li>
+                <li><a href="#payment" class="anchor-link" data-section="payment"><span class="anchor-number">04</span> Payment</a></li>
+                <li><a href="#delivery" class="anchor-link" data-section="delivery"><span class="anchor-number">05</span> Delivery</a></li>
+                <li><a href="#responsibilities" class="anchor-link" data-section="responsibilities"><span class="anchor-number">06</span> Responsibilities</a></li>
+                <li><a href="#ownership" class="anchor-link" data-section="ownership"><span class="anchor-number">07</span> Ownership</a></li>
+                <li><a href="#hosting" class="anchor-link" data-section="hosting"><span class="anchor-number">08</span> Hosting</a></li>
+                <li><a href="#cancellations" class="anchor-link" data-section="cancellations"><span class="anchor-number">09</span> Cancellations</a></li>
+                <li><a href="#liability" class="anchor-link" data-section="liability"><span class="anchor-number">10</span> Liability</a></li>
+                <li><a href="#termination" class="anchor-link" data-section="termination"><span class="anchor-number">11</span> Termination</a></li>
+                <li><a href="#changes" class="anchor-link" data-section="changes"><span class="anchor-number">12</span> Changes</a></li>
+                <li><a href="#governing" class="anchor-link" data-section="governing"><span class="anchor-number">13</span> Governing Law</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <main class="content-area">
+
+            <article>
+
+                <!-- Section 01 -->
+                <section class="policy-section" id="acceptance">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2 class="section-title">Acceptance of Terms</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>By visiting our website or hiring SalonFlow Studio to build your website, you agree to these terms. If you do not agree, please do not use our services. These terms apply to all clients across Kenya.</p>
+                        <div class="highlight-box">
+                            These terms form a binding agreement between you and SalonFlow Studio once a deposit is paid or services are engaged.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 02 -->
+                <section class="policy-section" id="services">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2 class="section-title">Our Services</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>SalonFlow Studio provides website design and development services for barbershops, salons and spas across Kenya. Our services include:</p>
+                        <ul class="section-list">
+                            <li>Website design and development (Starter, Growth, Premium packages)</li>
+                            <li>Booking system integration</li>
+                            <li>Google Maps and local SEO setup</li>
+                            <li>Photo gallery setup</li>
+                            <li>WhatsApp chat integration</li>
+                            <li>Website maintenance and support (monthly retainer plans)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 03 -->
+                <section class="policy-section" id="agreement">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2 class="section-title">Project Agreement</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>Before we begin any project we will confirm the following with you on WhatsApp:</p>
+                        <ul class="section-list">
+                            <li>The package you have chosen (Starter, Growth or Premium)</li>
+                            <li>The total price and payment schedule</li>
+                            <li>Your expected delivery timeline</li>
+                            <li>The content and photos you will provide</li>
+                        </ul>
+                        <p>Work begins only after the 50% deposit has been received and confirmed.</p>
+                    </div>
+                </section>
+
+                <!-- Section 04 -->
+                <section class="policy-section" id="payment">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <h2 class="section-title">Payment Terms</h2>
+                    </div>
+                    <div class="section-body">
+                        <ul class="section-list">
+                            <li>All prices are in Kenyan Shillings (KES)</li>
+                            <li>We accept payment via M-Pesa and Pochi la Biashara (+254 713 324 672)</li>
+                            <li>A 50% deposit is required before work begins</li>
+                            <li>The remaining 50% is due upon delivery and your approval of the final website</li>
+                            <li>Monthly retainer fees are due at the start of each month</li>
+                            <li>Late payment of retainer fees may result in suspension of hosting and support services</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 05 -->
+                <section class="policy-section" id="delivery">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <h2 class="section-title">Delivery & Revisions</h2>
+                    </div>
+                    <div class="section-body">
+                        <table class="terms-table">
+                            <thead>
+                                <tr>
+                                    <th>Package</th>
+                                    <th>Delivery Time</th>
+                                    <th>Revisions Included</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Starter</strong></td>
+                                    <td>5 working days</td>
+                                    <td>2 rounds</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Growth</strong></td>
+                                    <td>10 working days</td>
+                                    <td>2 rounds</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Premium</strong></td>
+                                    <td>14 working days</td>
+                                    <td>2 rounds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Timelines begin from the date we receive your deposit and all required content. Each package includes up to 2 rounds of revisions. Additional revisions beyond the included rounds are billed at <strong>KES 2,000 per request</strong>.</p>
+                    </div>
+                </section>
+
+                <!-- Section 06 -->
+                <section class="policy-section" id="responsibilities">
+                    <div class="section-header">
+                        <span class="section-number">06</span>
+                        <h2 class="section-title">Client Responsibilities</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>For us to deliver on time, you agree to:</p>
+                        <ul class="section-list">
+                            <li>Provide your business name, logo, photos and content when requested</li>
+                            <li>Respond to our messages within 48 hours</li>
+                            <li>Give clear and timely feedback during revision rounds</li>
+                            <li>Pay the deposit before work begins and the balance on delivery</li>
+                        </ul>
+                        <p>Delays caused by late content or feedback from your side may push back the delivery timeline. We are not responsible for delays caused by the client.</p>
+                    </div>
+                </section>
+
+                <!-- Section 07 -->
+                <section class="policy-section" id="ownership">
+                    <div class="section-header">
+                        <span class="section-number">07</span>
+                        <h2 class="section-title">Ownership & Intellectual Property</h2>
+                    </div>
+                    <div class="section-body">
+                        <ul class="section-list">
+                            <li>Your domain name is always 100% yours</li>
+                            <li>Your business content (logo, photos, text) remains your property</li>
+                            <li>For Starter and Growth packages, we retain ownership of the website code and host it on your behalf</li>
+                            <li>For Premium packages, full source code is handed over to you upon final payment</li>
+                            <li>We reserve the right to display your website in our portfolio and case studies unless you request otherwise in writing</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 08 -->
+                <section class="policy-section" id="hosting">
+                    <div class="section-header">
+                        <span class="section-number">08</span>
+                        <h2 class="section-title">Hosting & Maintenance</h2>
+                    </div>
+                    <div class="section-body">
+                        <ul class="section-list">
+                            <li>Websites are hosted on Vercel's free tier unless otherwise agreed</li>
+                            <li>Hosting is managed by SalonFlow Studio on your behalf for Starter and Growth packages</li>
+                            <li>If you are not on a retainer plan, any updates or changes are billed separately at KES 2,000 per request</li>
+                            <li>We are not liable for downtime caused by Vercel or other third-party hosting providers</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 09 -->
+                <section class="policy-section" id="cancellations">
+                    <div class="section-header">
+                        <span class="section-number">09</span>
+                        <h2 class="section-title">Cancellations & Refunds</h2>
+                    </div>
+                    <div class="section-body">
+                        <ul class="section-list">
+                            <li>If you cancel after paying the deposit but before work has started, you are entitled to a full refund</li>
+                            <li>If you cancel after work has started, the deposit is non-refundable as it covers time and resources already spent</li>
+                            <li>If we fail to deliver within the agreed timeline due to our fault, we will offer a partial refund or discount on your next project</li>
+                            <li>No refunds are issued after the final website has been approved and delivered</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 10 -->
+                <section class="policy-section" id="liability">
+                    <div class="section-header">
+                        <span class="section-number">10</span>
+                        <h2 class="section-title">Limitation of Liability</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>SalonFlow Studio is not liable for:</p>
+                        <ul class="section-list">
+                            <li>Loss of business, revenue or clients resulting from your website's performance</li>
+                            <li>Downtime or outages caused by third-party hosting or domain providers</li>
+                            <li>Errors introduced after we hand over the project to you</li>
+                            <li>Results from SEO — we set it up correctly but cannot guarantee specific rankings</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 11 -->
+                <section class="policy-section" id="termination">
+                    <div class="section-header">
+                        <span class="section-number">11</span>
+                        <h2 class="section-title">Termination</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>We reserve the right to cancel a project and refund your deposit if:</p>
+                        <ul class="section-list">
+                            <li>You are abusive or disrespectful toward our team</li>
+                            <li>You request content that is illegal, harmful or unethical</li>
+                            <li>You fail to provide required content or payment within 14 days of the agreed date</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 12 -->
+                <section class="policy-section" id="changes">
+                    <div class="section-header">
+                        <span class="section-number">12</span>
+                        <h2 class="section-title">Changes to These Terms</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>We may update these Terms of Service as our business grows. The updated date will always be shown at the top of this page. Continued use of our services means you accept any updated terms.</p>
+                    </div>
+                </section>
+
+                <!-- Section 13 -->
+                <section class="policy-section" id="governing">
+                    <div class="section-header">
+                        <span class="section-number">13</span>
+                        <h2 class="section-title">Governing Law</h2>
+                    </div>
+                    <div class="section-body">
+                        <p>These terms are governed by the laws of Kenya. Any disputes will be resolved under Kenyan law in Kisii County.</p>
+                        <div class="definition-card">
+                            <strong>Jurisdiction:</strong> Kisii County, Kenya. Both parties agree to submit to the exclusive jurisdiction of the courts of Kisii County for any disputes arising from these terms.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact CTA -->
+                <div class="contact-cta">
+                    <h3>Have a Question About These Terms?</h3>
+                    <p>Chat with us on WhatsApp and we'll explain anything clearly.</p>
+                    <a href="https://wa.me/254713324672?text=Hi%20SalonFlow%2C%20I%20have%20a%20question%20about%20your%20Terms%20of%20Service." target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+            </article>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-grid">
+                <div class="footer-brand-block">
+                    <a href="/salonflow.html" class="footer-logo">
+                        <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 37C13 30 19 24 22 22 25 20 33 15 35 8" stroke="#059669" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                            <path d="M9 29C14 24 19 21 22 19 25 17 32 12 35 6" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none" opacity=".4"/>
+                            <path d="M11 41C16 35 20 30 22 27 24 24 30 20 35 14" stroke="#059669" stroke-width="1" stroke-linecap="round" fill="none" opacity=".2"/>
+                            <circle cx="9" cy="37" r="3.5" fill="#059669"/>
+                            <circle cx="35" cy="8" r="2.2" fill="#059669" opacity=".5"/>
+                            <circle cx="9" cy="29" r="2" fill="#059669" opacity=".3"/>
+                        </svg>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-name">Salon<span class="footer-logo-accent">Flow</span></span>
+                            <span class="footer-logo-tag">Studio · Kenya</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Professional websites for barbershops, salons and spas across Kenya.</p>
+                    <div class="footer-socials">
+                        <a href="https://tiktok.com/@salonflow" class="footer-social" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/salonflow" class="footer-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://wa.me/254713324672" class="footer-social" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/salonflow" class="footer-social" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Site Map</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="/salonflow.html#home">Home</a></li>
+                        <li><a href="/salonflow.html#services">Services</a></li>
+                        <li><a href="/salonflow.html#portfolio">Portfolio</a></li>
+                        <li><a href="/salonflow.html#pricing">Pricing</a></li>
+                        <li><a href="/salonflow.html#about">About</a></li>
+                        <li><a href="/salonflow.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="/policy/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms/terms.html">Terms of Service</a></li>
+                        <li><a href="/cookies/cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2026 SalonFlow Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ── SCROLL SPY FOR ANCHOR BAR ──────────────────────
+        const sections = document.querySelectorAll('.policy-section');
+        const anchorLinks = document.querySelectorAll('.anchor-link');
+
+        function updateActiveSection() {
+            const scrollPos = window.scrollY + 200;
+
+            sections.forEach((section) => {
+                const top = section.offsetTop;
+                const bottom = top + section.offsetHeight;
+
+                if (scrollPos >= top && scrollPos < bottom) {
+                    const id = section.getAttribute('id');
+
+                    anchorLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('data-section') === id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveSection, { passive: true });
+        updateActiveSection();
+
+        // ── SMOOTH SCROLL FOR ANCHOR LINKS ───────────────
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
