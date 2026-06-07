@@ -2182,7 +2182,7 @@ Uses exact tokens from salonflow-style.css
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-3);
+    gap: var(--space-6);
 }
 
 /* ─── CASE CARD ───────────────────────────────────────── */
