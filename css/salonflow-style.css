@@ -5414,7 +5414,7 @@ Uses exact tokens from salonflow-style.css
 .contact-social-proof {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 45px;
     padding: 16px 20px;
     background: #ECFDF5;
     border-radius: 12px;
