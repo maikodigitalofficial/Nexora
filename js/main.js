@@ -560,7 +560,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const nameInput = document.getElementById('contactName');
             const phoneInput = document.getElementById('contactPhone');
             const businessInput = document.getElementById('businessName');
-            const packageSelect = document.getElementById('packageInterest');
+            const serviceSelect = document.getElementById('serviceInterest');
             const messageInput = document.getElementById('contactMessage');
 
             // Get selected business type
@@ -597,14 +597,14 @@ document.addEventListener('DOMContentLoaded', function () {
             submitBtn.classList.add('is-loading');
 
             // Build WhatsApp message
-            const packageText = packageSelect.value ?
-                `Package: ${packageSelect.options[packageSelect.selectedIndex].text}` :
-                'Package: Not sure yet';
+            const serviceText = serviceSelect.value ?
+                `Interest: ${serviceSelect.options[serviceSelect.selectedIndex].text}` :
+                'Interest: Not sure yet';
 
             const message = encodeURIComponent(
                 `Hi Nexora! I'm ${nameInput.value.trim()} from ${businessInput.value.trim() || 'a new business'}.\n\n` +
                 `Business Type: ${businessType.charAt(0).toUpperCase() + businessType.slice(1)}\n` +
-                `${packageText}\n` +
+                `${serviceText}\n` +
                 `${messageInput.value.trim() ? `\nDetails: ${messageInput.value.trim()}` : ''}\n\n` +
                 `My WhatsApp: ${phoneInput.value.trim()}`
             );
