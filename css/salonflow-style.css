@@ -185,7 +185,7 @@ button {
 .logo {
     display: flex;
     align-items: center;
-    gap: -5px;
+    gap: -50px;
     font-family: var(--font-logo);
     font-weight: var(--font-extrabold);
     font-size: 18px;
@@ -193,6 +193,10 @@ button {
     transition: opacity var(--transition-fast);
     letter-spacing: -0.02em;
     text-decoration: none;
+}
+
+.logo span {
+    transform: translateX(-20px);
 }
 
 .logo:hover {
@@ -6106,7 +6110,7 @@ Uses exact tokens from salonflow-style.css
     opacity: 0.85;
 }
 
-.footer-logo svg {
+.footer-logo img {
     width: 44px;
     height: 44px;
     flex-shrink: 0;

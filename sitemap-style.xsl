@@ -321,7 +321,7 @@ body{
 
 <a href="https://nexoradesign.vercel.app/" class="logo-wrap">
 
-<img src="/assets/logo.png"
+<img src="/assets/new-logo.svg"
 alt="Nexora Studio"
 class="logo-img"/>
 
